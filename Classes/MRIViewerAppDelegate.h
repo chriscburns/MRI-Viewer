@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MethodSender.h" 
+#import	"MethodReceiver.h" 
 
-@class MethodSender;
-@class MethodReceiver;
 @class MRIViewerViewController;
+
 
 @interface MRIViewerAppDelegate : NSObject <UIApplicationDelegate> {
 

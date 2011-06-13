@@ -24,7 +24,7 @@
 
 - (IBAction) buttonPressed; 
 - (void) registerAllListeners;
-	
+- (void) loadImageIntoScroll: (UIImage *) mriImage;
 
 @property(nonatomic,retain) IBOutlet UIScrollView *scroll;
 

@@ -8,14 +8,14 @@
 
 #import "MRIViewerAppDelegate.h"
 #import "MRIViewerViewController.h"
-#import "MethodSender.h" 
-#import	"MethodReceiver.h" 
+
 #import "NSString+UtilityCategory.h"
 
 @implementation MRIViewerAppDelegate
 
 @synthesize window;
 @synthesize viewController;
+
 @synthesize sender; 
 @synthesize receiver; 
 

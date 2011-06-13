@@ -272,6 +272,7 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>435DA92013A6B1F700F606E0</string>
+								<string>435DA92113A6B1F700F606E0</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -280,8 +281,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>2</integer>
-									<integer>1</integer>
+									<integer>21</integer>
+									<integer>18</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -324,7 +325,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20306471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MRIViewer-Info.plist</string>
+										<string>MRIViewerViewController.m</string>
 										<key>PBXSplitModuleInNavigatorKey</key>
 										<dict>
 											<key>Split0</key>
@@ -332,17 +333,21 @@
 												<key>PBXProjectModuleGUID</key>
 												<string>1CE0B20406471E060097A5F4</string>
 												<key>PBXProjectModuleLabel</key>
-												<string>MRIViewer-Info.plist</string>
+												<string>MRIViewerViewController.m</string>
 												<key>_historyCapacity</key>
 												<integer>0</integer>
 												<key>bookmark</key>
-												<string>435DA95113A6B22900F606E0</string>
+												<string>435DA99913A6C45B00F606E0</string>
 												<key>history</key>
 												<array>
-													<string>435DA27D13A67FCB00F606E0</string>
-													<string>435DA35713A6A21E00F606E0</string>
-													<string>435DA3F113A6ACF400F606E0</string>
-													<string>435DA95013A6B22900F606E0</string>
+													<string>435DA95B13A6B25C00F606E0</string>
+													<string>435DA99213A6C45B00F606E0</string>
+													<string>435DA99313A6C45B00F606E0</string>
+													<string>435DA99413A6C45B00F606E0</string>
+													<string>435DA99513A6C45B00F606E0</string>
+													<string>435DA99613A6C45B00F606E0</string>
+													<string>435DA99713A6C45B00F606E0</string>
+													<string>435DA99813A6C45B00F606E0</string>
 												</array>
 											</dict>
 											<key>SplitCount</key>
@@ -354,14 +359,14 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{0, 0}, {0, 957}}</string>
+										<string>{{0, 0}, {686, 957}}</string>
 										<key>RubberWindowFrame</key>
 										<string>4 56 1916 1122 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXNavigatorGroup</string>
 									<key>Proportion</key>
-									<string>0pt</string>
+									<string>686pt</string>
 								</dict>
 								<dict>
 									<key>ContentConfiguration</key>
@@ -381,18 +386,14 @@
 												<key>_historyCapacity</key>
 												<integer>0</integer>
 												<key>bookmark</key>
-												<string>435DA95A13A6B22900F606E0</string>
+												<string>435DA99E13A6C45B00F606E0</string>
 												<key>history</key>
 												<array>
-													<string>435DA38213A6A52F00F606E0</string>
-													<string>435DA95213A6B22900F606E0</string>
-													<string>435DA95313A6B22900F606E0</string>
-													<string>435DA95413A6B22900F606E0</string>
-													<string>435DA95513A6B22900F606E0</string>
-													<string>435DA95613A6B22900F606E0</string>
-													<string>435DA95713A6B22900F606E0</string>
-													<string>435DA95813A6B22900F606E0</string>
-													<string>435DA95913A6B22900F606E0</string>
+													<string>435DA95B13A6B25C00F606E0</string>
+													<string>435DA99A13A6C45B00F606E0</string>
+													<string>435DA99B13A6C45B00F606E0</string>
+													<string>435DA99C13A6C45B00F606E0</string>
+													<string>435DA99D13A6C45B00F606E0</string>
 												</array>
 											</dict>
 											<key>SplitCount</key>
@@ -404,14 +405,14 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{5, 0}, {1601, 957}}</string>
+										<string>{{691, 0}, {916, 957}}</string>
 										<key>RubberWindowFrame</key>
 										<string>4 56 1916 1122 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXNavigatorGroup</string>
 									<key>Proportion</key>
-									<string>1601pt</string>
+									<string>916pt</string>
 								</dict>
 							</array>
 							<key>Proportion</key>
@@ -459,7 +460,7 @@
 				<string>435DA27513A67C9C00F606E0</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
 				<string>435DA27613A67C9C00F606E0</string>
-				<string>435DA28213A67FCB00F606E0</string>
+				<string>435DA99F13A6C45B00F606E0</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
@@ -602,8 +603,8 @@
 		<string>435DA28A13A67FCB00F606E0</string>
 		<string>435DA28C13A67FCB00F606E0</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>43A100B713A158B3007A2978</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/chrisburns/Development/MRIViewer/MRIViewer.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -623,8 +624,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -647,6 +646,8 @@
 							<string>241pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -699,7 +700,7 @@
 			<key>WindowToolGUID</key>
 			<string>43A100B713A158B3007A2978</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

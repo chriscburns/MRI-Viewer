@@ -88,10 +88,35 @@
 - (IBAction) buttonPressed {
 	
 	
+	MRIViewerAppDelegate *delegate = (MRIViewerAppDelegate *) [[UIApplication sharedApplication] delegate];
+	
+	[delegate.sender receiveData:@"mripicture.png"]; 
+	
+}
+
+
+
+
+
+
+
+- (void) onDataReceived:(NSArray *) fileDataAndName {
+	
+	//Received Data 
+	NSLog(@"Image Received: %@", [fileDataAndName objectAtIndex:0]);
+	
+	[self loadImageIntoScroll:[UIImage imageWithData:[fileDataAndName objectAtIndex:1]]]; 
+	
+	
+	
+}
+
+
+- (void) loadImageIntoScroll: (UIImage *) mriImage {
+	
 	UIImageView *testImage = [[UIImageView alloc] init]; 
 	testImage.frame = CGRectMake(counter *768, 0, 768, 1024);
-	testImage.image = [UIImage imageNamed:@"watch.jpg"]; 
-	
+	testImage.image = mriImage; 	
 	
 	[scroll addSubview:testImage]; 
 	
@@ -101,8 +126,8 @@
 	[scroll setContentOffset:CGPointMake(counter*768, 0) animated:YES]; 
 	
 	counter++; 
+	
 }
-
 
 
 // Override to allow orientations other than the default portrait orientation.

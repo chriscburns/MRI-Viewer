@@ -6171,6 +6171,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Teddy Seyed (J7TRQ8UHD4)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -6180,6 +6181,7 @@
 				INFOPLIST_FILE = "MRIViewer-Info.plist";
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = MRIViewer;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A03CB332-BCD9-401B-A9DA-05F9A23C13CB";
 			};
 			name = Debug;
 		};
@@ -6187,6 +6189,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Teddy Seyed (J7TRQ8UHD4)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MRIViewer_Prefix.pch;
@@ -6194,6 +6197,7 @@
 				INFOPLIST_FILE = "MRIViewer-Info.plist";
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = MRIViewer;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A03CB332-BCD9-401B-A9DA-05F9A23C13CB";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
