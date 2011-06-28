@@ -8,7 +8,7 @@
 
 #import "MRIViewerViewController.h"
 #import "MRIViewerAppDelegate.h"
-
+#import <QuartzCore/QuartzCore.h>
 
 @implementation MRIViewerViewController
 
@@ -18,7 +18,8 @@
 
 
 
-
+#define IMG_WIDTH 768
+#define IMG_HEIGHT 624
 
 
 
@@ -35,12 +36,13 @@
 	scroll.showsVerticalScrollIndicator = NO;
 	scroll.showsHorizontalScrollIndicator = NO;
 	scroll.delegate = self;
-	scroll.backgroundColor = [UIColor blueColor];
+	scroll.backgroundColor = [UIColor blackColor];
 	scroll.autoresizesSubviews = YES;
 	
 	scroll.maximumZoomScale = 3; 
 	scroll.minimumZoomScale = 1; 
 	
+	/*
 	v1 = [[UIImageView alloc] init]; 
 	v1.frame = CGRectMake(0, 0, 768, 1024);
 	v1.image = [UIImage imageNamed:@"ants.jpg"]; 
@@ -52,13 +54,14 @@
 	v2.image = [UIImage imageNamed:@"watch.jpg"]; 
 	[scroll addSubview:v2]; 
 	
+	*/
 	
-	scroll.contentSize = CGSizeMake(2*768,1024);
+	//scroll.contentSize = CGSizeMake(2*768,1024);
 	[self.view addSubview:scroll]; 
 
 	
 	
-	counter = 2; 
+	counter = 0; 
 	
 	[super viewDidLoad];
 	
@@ -105,6 +108,7 @@
 	//Received Data 
 	NSLog(@"Image Received: %@", [fileDataAndName objectAtIndex:0]);
 	
+	
 	[self loadImageIntoScroll:[UIImage imageWithData:[fileDataAndName objectAtIndex:1]]]; 
 	
 	
@@ -114,20 +118,40 @@
 
 - (void) loadImageIntoScroll: (UIImage *) mriImage {
 	
+	
+	
 	UIImageView *testImage = [[UIImageView alloc] init]; 
-	testImage.frame = CGRectMake(counter *768, 0, 768, 1024);
+	testImage.frame = CGRectMake(counter * IMG_WIDTH, 0, IMG_WIDTH, IMG_HEIGHT);
 	testImage.image = mriImage; 	
 	
 	[scroll addSubview:testImage]; 
 	
-	scroll.contentSize = CGSizeMake((counter +1) * 768, 1024); 
+	scroll.contentSize = CGSizeMake((counter +1) * IMG_WIDTH, IMG_HEIGHT); 
 	
 	
-	[scroll setContentOffset:CGPointMake(counter*768, 0) animated:YES]; 
+	[scroll setContentOffset:CGPointMake(counter*IMG_WIDTH, 0) animated:YES]; 
 	
 	counter++; 
+
 	
 }
+
+
+//Used to determine that the scroll view's associated patient and date should change
+- (void) scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+
+	
+	patientLabel.text = @"Jack Black"; 
+	
+	//Set the current time .... 
+	NSDate *now = [NSDate date];
+	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+	[formatter setTimeStyle:NSDateFormatterShortStyle];
+	dateLabel.text = [formatter stringFromDate:now]; 
+
+
+}
+
 
 
 // Override to allow orientations other than the default portrait orientation.

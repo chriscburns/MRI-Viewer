@@ -32,6 +32,7 @@
 		435DA94B13A6B1F700F606E0 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 435DA93D13A6B1F700F606E0 /* CXMLNode_XPathExtensions.m */; };
 		43A1011C13A17094007A2978 /* ants.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43A1011A13A17094007A2978 /* ants.jpg */; };
 		43A1011D13A17094007A2978 /* watch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43A1011B13A17094007A2978 /* watch.jpg */; };
+		43BDAD3813B965A800FF367D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BDAD3713B965A800FF367D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -741,6 +742,7 @@
 		435DA93E13A6B1F700F606E0 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
 		43A1011A13A17094007A2978 /* ants.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ants.jpg; sourceTree = "<group>"; };
 		43A1011B13A17094007A2978 /* watch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = watch.jpg; sourceTree = "<group>"; };
+		43BDAD3713B965A800FF367D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* MRIViewer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MRIViewer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -754,6 +756,7 @@
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				435DA3EC13A6ACDC00F606E0 /* libxml2.dylib in Frameworks */,
 				435DA40413A6ADDB00F606E0 /* CFNetwork.framework in Frameworks */,
+				43BDAD3813B965A800FF367D /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,6 +820,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43BDAD3713B965A800FF367D /* QuartzCore.framework */,
 				435DA3EB13A6ACDC00F606E0 /* libxml2.dylib */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,

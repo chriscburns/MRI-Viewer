@@ -14,6 +14,12 @@
 	
 	IBOutlet UIButton *button; 
 	
+	IBOutlet UILabel *patientLabel; 
+	IBOutlet UILabel *dateLabel; 
+	IBOutlet UILabel *titleLabel; 
+	
+	
+	
 	
 	UIImageView *v1; 
 	UIImageView *v2; 
